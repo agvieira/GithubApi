@@ -12,7 +12,6 @@
 		473C962B20BC23AA000737DD /* GithubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473C962A20BC23AA000737DD /* GithubAppTests.swift */; };
 		4787E98620BC273F00CDDD94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4787E97720BC273F00CDDD94 /* Assets.xcassets */; };
 		4787E98720BC273F00CDDD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4787E97820BC273F00CDDD94 /* LaunchScreen.storyboard */; };
-		4787E98920BC273F00CDDD94 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4787E97C20BC273F00CDDD94 /* Info.plist */; };
 		4787E98A20BC273F00CDDD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787E97F20BC273F00CDDD94 /* AppDelegate.swift */; };
 		4787E98B20BC273F00CDDD94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4787E98420BC273F00CDDD94 /* ViewController.swift */; };
 		4BAB19F441E8C113E63CC21C /* Pods_GithubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB27E11BFDE0411F7A52544 /* Pods_GithubApp.framework */; };
@@ -206,6 +205,7 @@
 			buildConfigurationList = 473C962F20BC23AA000737DD /* Build configuration list for PBXNativeTarget "GithubApp" */;
 			buildPhases = (
 				D05FA862BD6ABB7B3B9AA61E /* [CP] Check Pods Manifest.lock */,
+				47ADD3CC20C9F5C500045302 /* SwiftLint */,
 				473C960E20BC23A9000737DD /* Sources */,
 				473C960F20BC23A9000737DD /* Frameworks */,
 				473C961020BC23A9000737DD /* Resources */,
@@ -283,7 +283,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4787E98920BC273F00CDDD94 /* Info.plist in Resources */,
 				4787E98620BC273F00CDDD94 /* Assets.xcassets in Resources */,
 				4787E98720BC273F00CDDD94 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -328,6 +327,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubApp/Pods-GithubApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		47ADD3CC20C9F5C500045302 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		61815001040D433DB251693E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
